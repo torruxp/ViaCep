@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="ViaCep.js"></script>
+    <title>ViaCep</title>
+</head>
+<body>
+    <!-- Inicio do formulario -->
+      <form method="get" action=".">
+        <label>Cep:
+        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+               onblur="pesquisacep(this.value);" /></label><br />
+        <label>Cidade:
+        <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+        <label>Estado:
+        <input name="uf" type="text" id="uf" size="2" /></label><br />
+        <label>IBGE:
+        <input name="ibge" type="text" id="ibge" size="8" /></label><br />
+      </form>
+    </body>
+</html>
+
+<!-- Podemos usar o onblur  para quando o usuario trocar o campo ele atualizar a linha dentro do exemplo ao lado e na propria linha, quando trocarmos para a proxima linha ele muda o cep passado para Cidade - UF -->
+<!-- Conversei com o Yoseff sobre o que ele acharia necéssario para fazer a parte de analise de dados e mostrando os campos que a API retorna ele pediu para amarzenarmos apenas CIDADE, UF e IBGE-->
